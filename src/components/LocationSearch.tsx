@@ -23,24 +23,24 @@ const LocationSearch = ({ onLocationChange }: LocationSearchProps) => {
   };
 
   return (
-    <div className="glass-card p-6 hover-lift animate-fade-in">
-      <div className="flex items-center gap-2 mb-4">
-        <MapPin className="h-5 w-5 text-primary" />
-        <h2 className="text-xl font-semibold">Location</h2>
+    <div className="glass-card p-4 sm:p-5 md:p-6 hover-lift animate-fade-in">
+      <div className="flex items-center gap-2 mb-3 sm:mb-4">
+        <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+        <h2 className="text-lg sm:text-xl font-semibold">Location</h2>
       </div>
       
-      <div className="flex gap-3">
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
         <Input
           type="text"
           placeholder="Enter city name or zip code..."
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           onKeyPress={handleKeyPress}
-          className="flex-1 bg-background/50 border-2 focus:border-primary smooth-transition"
+          className="flex-1 bg-background/50 border-2 focus:border-primary smooth-transition text-sm sm:text-base"
         />
         <Button
           onClick={handleSearch}
-          className="smooth-transition hover:scale-105"
+          className="smooth-transition hover:scale-105 w-full sm:w-auto"
         >
           <Search className="h-4 w-4 mr-2" />
           Search

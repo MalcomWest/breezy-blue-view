@@ -31,18 +31,18 @@ const ComfortSettings = () => {
   ];
 
   return (
-    <div className="glass-card p-6 hover-lift animate-fade-in">
-      <div className="flex items-center gap-2 mb-6">
-        <Settings className="h-5 w-5 text-primary" />
-        <h2 className="text-xl font-semibold">Comfort Settings</h2>
+    <div className="glass-card p-4 sm:p-5 md:p-6 hover-lift animate-fade-in">
+      <div className="flex items-center gap-2 mb-4 sm:mb-5 md:mb-6">
+        <Settings className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+        <h2 className="text-lg sm:text-xl font-semibold">Comfort Settings</h2>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-4 sm:space-y-5 md:space-y-6">
         {/* Temperature Preference */}
-        <div className="space-y-3">
+        <div className="space-y-2 sm:space-y-3">
           <div className="flex items-center gap-2">
-            <Thermometer className="h-4 w-4 text-primary" />
-            <Label className="text-sm font-medium">
+            <Thermometer className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary" />
+            <Label className="text-xs sm:text-sm font-medium">
               Preferred Temperature: {temperature}°C
             </Label>
           </div>
@@ -61,10 +61,10 @@ const ComfortSettings = () => {
         </div>
 
         {/* Humidity Preference */}
-        <div className="space-y-3">
+        <div className="space-y-2 sm:space-y-3">
           <div className="flex items-center gap-2">
-            <Droplets className="h-4 w-4 text-primary" />
-            <Label className="text-sm font-medium">
+            <Droplets className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary" />
+            <Label className="text-xs sm:text-sm font-medium">
               Preferred Humidity: {humidity}%
             </Label>
           </div>
@@ -83,10 +83,10 @@ const ComfortSettings = () => {
         </div>
 
         {/* Air Quality Preference */}
-        <div className="space-y-3">
+        <div className="space-y-2 sm:space-y-3">
           <div className="flex items-center gap-2">
-            <Wind className="h-4 w-4 text-primary" />
-            <Label className="text-sm font-medium">
+            <Wind className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary" />
+            <Label className="text-xs sm:text-sm font-medium">
               Minimum Air Quality Index: {airQuality}
             </Label>
           </div>
@@ -105,10 +105,10 @@ const ComfortSettings = () => {
         </div>
 
         {/* Lung Disease Selection */}
-        <div className="space-y-3">
+        <div className="space-y-2 sm:space-y-3">
           <div className="flex items-center gap-2">
-            <Activity className="h-4 w-4 text-primary" />
-            <Label className="text-sm font-medium">Respiratory Conditions</Label>
+            <Activity className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary" />
+            <Label className="text-xs sm:text-sm font-medium">Respiratory Conditions</Label>
           </div>
           <Select>
             <SelectTrigger className="bg-background/50 border-2 focus:border-primary smooth-transition">
